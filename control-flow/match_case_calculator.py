@@ -21,8 +21,6 @@ match operation:
 if result != None:
      print(f"The result is {result}.")
  
-else:
- print("Invalid input. Please enter numbers for calculations.")
 
 
 
