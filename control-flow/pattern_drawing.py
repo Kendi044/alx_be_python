@@ -1,7 +1,6 @@
 try:
 
-  size_string = input("Enter the size of the pattern: ")
-  size = int(size_string)
+  size = int(input("Enter the size of the pattern: "))
 
   if size <= 0:
       print("Please enter positive interger for the pattern size.")
