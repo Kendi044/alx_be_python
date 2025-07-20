@@ -1,12 +1,12 @@
 try:
     number = int(input("Enter a number to see its multiplication table: "))
-    X = number
+    #X = number
     
     for i in range (1, 11):
-        Y = i
-        Z = X * Y
-  
-        print(f"{X} * {Y} = {Z}")
+        #Y = i
+        #Z = X * Y
+        product = number * i
+        print(f"{number} * {i} = {product}")
 
 except ValueError:
     # Handle cases where the user inputs something that is not an integer
