@@ -1,5 +1,5 @@
+# arithmetic_operations.py
 
-import math
 def perform_operation(num1: float, num2: float, operation: str):
     """
     Performs basic arithmetic operations.
@@ -12,7 +12,6 @@ def perform_operation(num1: float, num2: float, operation: str):
     Returns:
         float or str: The result of the operation, or an error message for division by zero or invalid operation.
     """
-
     if operation == 'add':
         return num1 + num2
     elif operation == 'subtract':
@@ -25,5 +24,5 @@ def perform_operation(num1: float, num2: float, operation: str):
         else:
             return num1 / num2
     else:
-        return "Error: Invalid operator, please choose between (add, subtract, multiply, divide)"
+        return "Error: Invalid operation."
        
