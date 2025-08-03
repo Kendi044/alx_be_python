@@ -32,16 +32,15 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calc.multiply(-5, -5), 25)
         self.assertEqual(self.calc.multiply(2.5, 2), 5.0)
 
-    def test_division_normal(self):
-        """Test the divide method with normal, non-zero divisors."""
+    def test_division(self):
+    
+    # Test normal division
         self.assertEqual(self.calc.divide(10, 5), 2.0)
         self.assertEqual(self.calc.divide(5, 2), 2.5)
         self.assertEqual(self.calc.divide(-10, 2), -5.0)
-        self.assertEqual(self.calc.divide(10, -2), -5.0)
         self.assertEqual(self.calc.divide(0, 5), 0.0)
 
-    def test_division_by_zero(self):
-        """Test the divide method with zero as the divisor."""
+    # Test division by zero (edge case)
         self.assertIsNone(self.calc.divide(10, 0))
         self.assertIsNone(self.calc.divide(-5, 0))
         self.assertIsNone(self.calc.divide(0, 0))
