@@ -1,3 +1,4 @@
+# In bank_account.py
 class BankAccount:
     """
     A class to represent a bank account.
@@ -37,14 +38,15 @@ class BankAccount:
         Returns:
             bool: True if the withdrawal was successful, False otherwise.
         """
+        # The 'return' statement MUST be indented to be part of this method
         if amount > 0 and self._account_balance >= amount:
             self._account_balance -= amount
             return True
         elif amount <= 0:
             print("Withdrawal amount must be positive.")
         else:
-            print("Insufficient funds.")
-        return False
+            # Here, we only return False without a print statement
+         return False
 
     def display_balance(self):
         """
